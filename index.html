@@ -1,54 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Rock Paper Scissors Lizard Spock</title>
+    <!-- font awesome and google fonts -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway%7CRighteous" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Rock Paper Scissors lizard spock</title>
 </head>
+
 <body>
-    <header>
-        <h1>Rock Paper Scissors Lizard Spock</h1>
-    </header>
+    <h1 class="heading">Rock Paper Scissors lizard spock
+        
+    </h1>
 
-    <div class="result">
-        <p id="round__result"></p>
-        <p id="result__text">To begin choose one from rock, paper, scissor, Lizard or Spock</p>
+    <div class="game-area">
+
     </div>
 
-    <div class="choices">
-        <div class="choice" id="rock">
-            <i class="fas fa-hand-rock"></i>
-        </div>
-
-        <div class="choice" id="paper">
-            <i class="fas fa-hand-paper"></i>
-        </div>
-
-        <div class="choice" id="scissor">
-            <i class="fas fa-hand-scissors"></i>
-        </div>
-
-        <div class="choice" id="Lizard">
-            <i class="fas fa-hand-lizard"></i>
-        </div>
-
-        <div class="choice" id="Spock">
-            <i class="fas fa-hand-spock"></i>
-        </div>
-
-        <section class="score-board">
-            <div class="icon" id="comp-label">Computer</div>
-            <div class="icon" id="user-label">User</div>
-            <span id="user-score">0</span>:<span id="computer-score">0</span>
-        </section>
-        <div class="action_text">
-            <p>Make Your Choice Now!</p>
+    <div class="score-area">
+        <p class="scores">Your Wins <span id="score">0</span></p>
+        <p class="scores">Ai Wins <span id="incorrect">0</span></p>
+        
     </div>
-</div>
 
-    
-
+    <script src="assets/js/script.js"></script>
 </body>
+
 </html>
+
