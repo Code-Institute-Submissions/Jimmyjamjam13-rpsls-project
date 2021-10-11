@@ -5,48 +5,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- font awesome and google fonts -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Raleway%7CRighteous" rel="stylesheet">
 
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Rock Paper Scissors lizard spock</title>
+    <title>Rock Paper Scissor lizard spock</title>
 </head>
 
 <body>
-    <h1 class="heading">Rock Paper Scissors lizard spock
-        
-    </h1>
+    <section class="game">
+        <h1 class="heading">
+            Rock Paper Scissor lizard spock
+        </h1>
+        <div class="game-area">
+            <div class="score">
+                <div class="playerScore">
+                    <h2>Player</h2>
+                    <p class="p-count count">0</p>
+                </div>
+                <div class="computerScore">
+                    <h2>Computer</h2>
+                    <p class="c-count count">0</p>
+                </div>
+            </div>
 
-    <div class="game-area">
-        <div class="controls-area">
-            <button class="btn btn--big btn--green">
-                <i class="fas fa-hand-rock"></i>
-            </button>
-            <button class="btn btn--big btn--blue">
-                <i class="fas fa-hand-paper"></i>
-            </button>
-            <button class="btn btn--big btn--orange">
-                <i class="fas fa-hand-scissors"></i>
-            </button>
-            <button class="btn btn--big btn--red">
-                <i class="fas fa-hand-lizard"></i>
-            </button>
-            <button class="btn btn--big btn--purple">
-                <i class="fas fa-hand-spock"></i>
-            </button>
+            <div class="move">Choose your move</div>
 
-    </div>
+            <div class="movesleft">Moves Left: 10 </div>
 
-    <div class="score-area">
-        <p class="scores">Your Wins <span id="score">0</span></p>
-        <p class="scores">Ai Wins <span id="incorrect">0</span></p>
-        
-    </div>
+            <div class="options">
+                <button class="rock">Rock</button>
+                <button class="paper">Paper </button>
+                <button class="scissor">Scissor </button>
+                <button class="lizard">Lizard </button>
+                <button class="spock"> Spock</button>
+            </div>
+        </div>
+
+        <div class="result"></div>
+
+        <button class="reload"></button>
+
+    </section>
 
     <script src="assets/js/script.js"></script>
 </body>
 
 </html>
-
