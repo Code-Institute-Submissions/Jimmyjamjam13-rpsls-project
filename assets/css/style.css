@@ -76,32 +76,20 @@ body {
     font-size: 3rem;
 }
 
-/* Media queries */
-
-/* For larger to medium screens size from 1200px wide and down */
-@media screen and (max-width: 1200px) {
-    #heading {
-        width: 65%;
-        height: 1200px;
-        margin: 0 auto;
+/* Responsive Design */
+@media screen and (max-width: 612px)
+{  
+    .heading{
+        text-align: center;
+        font-size: 1.5rem;
     }
-
-    #game-area {
-        padding: 30px 0;
-        margin: 0;
+    .score{
+        position: absolute;
+        top: 200px;
+        width: 100vw;
+        font-size: 1.5rem;
     }
-
-    #score {
-        width: 100%;
-        float: left;
-        padding: 0;
-    }
-
-    #options {
-        clear: both;
-        width: 100%;
-        float: left;
-        padding: 0;
+    .options{
+        width: 50vw;
     }
 }
-
