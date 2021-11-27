@@ -21,7 +21,7 @@ const game = () => {
                 movesLeft.innerText = `Moves Left: ${10 - moves}`;
 
 
-                const choiceNumber = Math.floor(Math.random() * 6);
+                const choiceNumber = Math.floor(Math.random() * 5);
                 const computerChoice = computerOptions[choiceNumber];
 
                 winner(this.innerText, computerChoice)
