@@ -40,9 +40,12 @@ const game = () => {
         const computerScoreBoard = document.querySelector('.c-count');
         player = player.toLowerCase();
         computer = computer.toLowerCase();
+        
+        //tie check
         if (player === computer) {
             result.textContent = 'Tie'
         }
+        //rock Vs paper
         else if (player == 'rock') {
             if (computer == 'paper') {
                 result.textContent = 'Computer Won';
@@ -55,7 +58,8 @@ const game = () => {
                 playerScoreBoard.textContent = playerScore;
             }
         }
-        else if (player == 'scissors') {
+        //scissor Vs rock
+        else if (player == 'scissor') {
             if (computer == 'rock') {
                 result.textContent = 'Computer Won';
                 computerScore++;
@@ -66,8 +70,9 @@ const game = () => {
                 playerScoreBoard.textContent = playerScore;
             }
         }
+        //paper Vs scissor
         else if (player == 'paper') {
-            if (computer == 'scissors') {
+            if (computer == 'scissor') {
                 result.textContent = 'Computer Won';
                 computerScore++;
                 computerScoreBoard.textContent = computerScore;
@@ -77,7 +82,7 @@ const game = () => {
                 playerScoreBoard.textContent = playerScore;
             }
         }
-
+        //lizard Vs rock
         else if (player == 'lizard') {
             if (computer == 'rock') {
                 result.textContent = 'Computer Won';
@@ -89,9 +94,9 @@ const game = () => {
                 playerScoreBoard.textContent = playerScore;
             }
         }
-
-         else if (player == 'rock') {
-            if (computer == 'spock') {
+        //spock Vs rock
+         else if (player == 'spock') {
+            if (computer == 'rock') {
                 result.textContent = 'Computer Won';
                 computerScore++;
                 computerScoreBoard.textContent = computerScore;
@@ -101,7 +106,7 @@ const game = () => {
                 playerScoreBoard.textContent = playerScore;
             }
         }
-
+        //paper Vs lizard
         else if (player == 'paper') {
             if (computer == 'lizard') {
                 result.textContent = 'Computer Won';
@@ -113,7 +118,7 @@ const game = () => {
                 playerScoreBoard.textContent = playerScore;
             }
         }
-
+        //spock Vs paper
         else if (player == 'spock') {
             if (computer == 'paper') {
                 result.textContent = 'Computer Won';
@@ -125,7 +130,7 @@ const game = () => {
                 playerScoreBoard.textContent = playerScore;
             }
         }
-
+        //lizard Vs scissor
         else if (player == 'lizard') {
             if (computer == 'scissor') {
                 result.textContent = 'Computer Won';
@@ -137,7 +142,7 @@ const game = () => {
                 playerScoreBoard.textContent = playerScore;
             }
         }
-
+        //scissor Vs spock
         else if (player == 'scissor') {
             if (computer == 'spock') {
                 result.textContent = 'Computer Won';
@@ -149,7 +154,7 @@ const game = () => {
                 playerScoreBoard.textContent = playerScore;
             }
         }
-
+        //spock Vs lizard
         else if (player == 'spock') {
             if (computer == 'lizard') {
                 result.textContent = 'Computer Won';
