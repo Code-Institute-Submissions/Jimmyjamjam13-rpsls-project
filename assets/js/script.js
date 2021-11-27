@@ -1,9 +1,10 @@
+// Complete logic of game inside this function
 const game = () => {
     let playerScore = 0;
     let computerScore = 0;
     let moves = 0;
 
-
+    // Function to start playing game
     const playGame = () => {
         const rockBtn = document.querySelector('.rock');
         const paperBtn = document.querySelector('.paper');
@@ -33,7 +34,7 @@ const game = () => {
         })
 
     }
-
+    // Function to game options
     const winner = (player, computer) => {
         const result = document.querySelector('.result');
         const playerScoreBoard = document.querySelector('.p-count');
@@ -178,7 +179,7 @@ const gameOver = (playerOptions, movesLeft) => {
         option.style.display = 'none';
     })
 
-
+    // Function to run when game is over
     chooseMove.innerText = 'Game Over!!'
     movesLeft.style.display = 'none';
 
@@ -203,7 +204,10 @@ const gameOver = (playerOptions, movesLeft) => {
         window.location.reload();
     })
 }
+// Calling playGame function inside game
 playGame();
 }
+
+/* Reload button style */
 game();
 
