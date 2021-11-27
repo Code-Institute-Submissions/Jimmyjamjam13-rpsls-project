@@ -22,8 +22,7 @@ I tested this page on different browsers:chrome,safari and edge.
 I confirmed that the navigation, header, current events, sign up and contact us text is all readable and easy to understand. I tested to see if all the button worked the way they suppost to at differnt window sizes.
 
 ### Bugs
-the restart button is not positioned right and is stuck in the one postion even when the window size changes. It also does not appear all the time. At the moment i cant see why thats the case but in the future with a bit more time and maybe help from other i can fix it.
-![Screenshot (26)](https://user-images.githubusercontent.com/87779486/136867773-b11764eb-b3aa-437a-ac4b-44bc4cfea2bd.png)
+None
 
 #### Fixed 
 When i deployed my file i saw the script.js file was not affecting the file.i forgot to and the <script src="assets/js/script.js"></script> to the bottom of the html file.
